@@ -92,3 +92,8 @@ fpga-util.py -f -b bitstream.bit fpga0-serial
 # Your FPGA should be flashed now do your stuff
 fpga-util.py -r fpga0-serial
 ```
+
+
+# TODOs
+
+Currently this script executes as root the hw_server and vivado to flash the FPGAs. This requires a lock so that only one user can do this at a time. It would make more sense when allocating an FPGA that not only the attached devices from the FPGA take ownership of the user but also the JTAG interface from the FPGA receives the users ownership. This would enable executing the hw_server and vivado from the user context instead of root since the user has read and write permissions to use the JTAG interface. Somebody should do this in the future...
