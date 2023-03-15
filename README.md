@@ -17,7 +17,7 @@ sudo make uninstall
 **IMPORTANT:** to allow unpriviliged users (users without sudo) to use this script, one needs to adjust the sudoers file as follows:
 ```text
 ## FPGA-Utils
-Cmnd_Alias FPGA_UTIL = /use/local/bin/fpga-util.py
+Cmnd_Alias FPGA_UTIL = /usr/local/bin/fpga-util.py
 
 # Allow all users access to the FPGAs through the managing fpga-utils scripts
 ALL     ALL=(root)      NOPASSWD: FPGA_UTIL
