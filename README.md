@@ -1,6 +1,6 @@
 # fpga-util.py
 
-This helper script is used in at NTNU in the cluster environment to manage multiple FPGAs in a multi user environment. It is designed so that unpriviliged users can allocate FPGAs, flash their bitstreams on them and release the FPGAs when they are done.
+This helper script is used at NTNU in our clusters to manage multiple FPGAs in a multi user environment. It is designed so that unpriviliged users can allocate FPGAs, flash their bitstreams on them and release the FPGAs when they are done.
 
 **WARNING:** this script does not protect the system from any further actions of the user that might compromise the system. In an untrusted environment it is important to thoroughly check the bitstreams before they are flashed to the FPGAs or allow only to flash bitstreams from a trusted implementation flow!
 
@@ -57,7 +57,7 @@ This is the TCL script that is invoked with Vivado to flash the FPGA. It is pass
 
 # Usage
 
-```bash
+```text
 usage: fpga-util.py [-h] [-l] [-a] [-f] [-r] [-d] [-b BITSTREAM]
                     [--hwserver-bin HWSERVER_BIN] [--vivado-bin VIVADO_BIN]
                     [-q]
