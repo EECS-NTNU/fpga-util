@@ -1,2 +1,2 @@
-DUMMY0 81 none u280 example.tcl
-DUMMY1 01 none u250 example.tcl
+DUMMY0 81 xilinx-alveo-quirk u280 example.tcl
+DUMMY1 01 xilinx-alveo-quirk u250 example.tcl
